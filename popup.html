@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results Export</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 400px; padding: 10px; }
+    textarea { width: 95%; height: 150px; margin-bottom: 10px; }
+    button { margin-right: 5px; }
+    #status { font-size: 0.9em; color: green; }
+  </style>
+</head>
+<body>
+  <h3>Exported URLs</h3>
+  <textarea id="urlsTextarea"></textarea>
+  <button id="copyButton">Copy to Clipboard</button>
+  <button id="downloadButton">Download as TXT</button>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>

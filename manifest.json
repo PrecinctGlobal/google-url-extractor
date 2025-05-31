@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Google Search Enhancer",
+  "version": "1.0",
+  "description": "Increases Google search results to 1000 and exports URLs.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/search*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
